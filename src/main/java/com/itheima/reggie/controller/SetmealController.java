@@ -10,19 +10,11 @@ import com.itheima.reggie.service.CategoryService;
 import com.itheima.reggie.service.SetmealDishService;
 import com.itheima.reggie.service.SetmealService;
 import lombok.extern.slf4j.Slf4j;
-<<<<<<< HEAD
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
-=======
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
->>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -50,10 +42,7 @@ public class SetmealController {
      * @return
      */
     @PostMapping
-<<<<<<< HEAD
     @CacheEvict(value = "setmealCache",allEntries = true)
-=======
->>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
     public R<String> save(@RequestBody SetmealDto setmealDto){
         log.info("套餐信息：{}",setmealDto);
 
@@ -113,10 +102,7 @@ public class SetmealController {
      * @return
      */
     @DeleteMapping
-<<<<<<< HEAD
     @CacheEvict(value = "setmealCache",allEntries = true)
-=======
->>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
     public R<String> delete(@RequestParam List<Long> ids){
         log.info("ids:{}",ids);
 
@@ -131,10 +117,7 @@ public class SetmealController {
      * @return
      */
     @GetMapping("/list")
-<<<<<<< HEAD
     @Cacheable(value = "setmealCache",key = "#setmeal.categoryId + '_' + #setmeal.status")
-=======
->>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
     public R<List<Setmeal>> list(Setmeal setmeal){
         LambdaQueryWrapper<Setmeal> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(setmeal.getCategoryId() != null,Setmeal::getCategoryId,setmeal.getCategoryId());

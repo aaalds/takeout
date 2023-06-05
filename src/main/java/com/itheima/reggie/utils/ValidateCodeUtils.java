@@ -11,7 +11,6 @@ public class ValidateCodeUtils {
      * @param length 长度为4位或者6位
      * @return
      */
-
     public static Integer generateValidateCode(int length){
         Integer code =null;
         if(length == 4){
