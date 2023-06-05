@@ -18,8 +18,15 @@ public class SMSUtils {
 	 * @param templateCode 模板
 	 * @param phoneNumbers 手机号
 	 * @param param 参数
+<<<<<<< HEAD
 	 */
 	public static void sendMessage(String signName, String templateCode,String phoneNumbers,String param){
+=======
+	 *
+	 *
+	 */
+		public static void sendMessage(String signName, String templateCode,String phoneNumbers,String param){
+>>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
 		DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
 		IAcsClient client = new DefaultAcsClient(profile);
 

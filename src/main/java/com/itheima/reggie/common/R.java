@@ -1,8 +1,11 @@
 package com.itheima.reggie.common;
 
 import lombok.Data;
+<<<<<<< HEAD
 
 import java.io.Serializable;
+=======
+>>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +14,11 @@ import java.util.Map;
  * @param <T>
  */
 @Data
+<<<<<<< HEAD
 public class R<T> implements Serializable{
+=======
+public class R<T> {
+>>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
 
     private Integer code; //编码：1成功，0和其它数字为失败
 

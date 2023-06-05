@@ -23,7 +23,10 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKN
  * 从Java对象生成JSON的过程称为 [序列化Java对象到JSON]
  */
 public class JacksonObjectMapper extends ObjectMapper {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e6a2cbd12365f1003a00906ed1d7685aa9d82de
     public static final String DEFAULT_DATE_FORMAT = "yyyy-MM-dd";
     public static final String DEFAULT_DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
     public static final String DEFAULT_TIME_FORMAT = "HH:mm:ss";
